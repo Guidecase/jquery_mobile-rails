@@ -23,7 +23,7 @@ You can include it by adding the following to your javascript and stylesheet fil
 
 ### Multi-Page Template Support
 
-The native multi-page template functionality can trigger various issues when combined with normal single-page PJAX templates. Include the separate support file with necessary fixes (before the JQM script!) in order to run a site with both multi- and single-page layouts. e.g.
+The native multi-page layouy functionality can trigger various issues when combined with normal single-page PJAX templates. Include the separate support file containing necessary fixes (before the JQM script!) in order to run a site with both multi- and single-page layouts. e.g.
 
     //= require jquery_mobile_multipage_support
     //= require jquery_mobile
