@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name         = "jquery_mobile-rails"
-  s.version      = '2.2.2'
+  s.version      = '2.2.3'
   s.platform     = Gem::Platform::RUBY  
   s.description  = "jQuery Mobile"
   s.summary      = "This gem provides the jQuery Mobile assets to Rails apps."
