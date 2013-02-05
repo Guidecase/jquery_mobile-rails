@@ -21,16 +21,12 @@ You can include it by adding the following to your javascript and stylesheet fil
 
     //= require jquery_mobile
 
-### Multi-Page Template Support Patch
+### Multi-Page Template Support
 
-The following patch (ugly hack) was applied to `startIn()` initialization to fix mass selection ui breakdown:
+The native multi-page template functionality can trigger various issues when combined with normal single-page PJAX templates. Include the separate support file with necessary fixes (before the JQM script!) in order to run a site with both multi- and single-page layouts. e.g.
 
-    startIn = function() {
-      ...
-      var hasMultiplePagesAssigned = $to.length > 1
-      if (hasMultiplePagesAssigned) $to.splice(1, $to.length-1)
-      ...
-    }
+    //= require jquery_mobile_multipage_support
+    //= require jquery_mobile
 
 ### License
 
