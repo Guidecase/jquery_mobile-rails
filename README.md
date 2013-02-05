@@ -9,7 +9,7 @@ http://jquerymobile.com/
 
 This gem is intended to support the latest stable and candidate releases. The current jQuery Mobile version is:
 
-    v1.3.0-beta.1 release
+    v1.3.0-rc1 release
 
 ### Installation
 
