@@ -3681,6 +3681,10 @@ var createHandler = function( sequential ) {
 			},
 
 			startIn = function() {
+				// HOTFIX HACK: multi-page template initialization can possibly assign multiple 
+				// elements for $to causing a ui breakdown; default to 
+				var hasMultiplePagesAssigned = $to.length > 1
+				if (hasMultiplePagesAssigned) $to.splice(1, $to.length-1)
 
 				// Prevent flickering in phonegap container: see comments at #4024 regarding iOS
 				$to.css( "z-index", -10 );

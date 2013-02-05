@@ -21,6 +21,17 @@ You can include it by adding the following to your javascript and stylesheet fil
 
     //= require jquery_mobile
 
+### Multi-Page Template Support Patch
+
+The following patch (ugly hack) was applied to `startIn()` initialization to fix mass selection ui breakdown:
+
+    startIn = function() {
+      ...
+      var hasMultiplePagesAssigned = $to.length > 1
+      if (hasMultiplePagesAssigned) $to.splice(1, $to.length-1)
+      ...
+    }
+
 ### License
 
 The jQuery Mobile Rails Gem is published under the New BSD license.
