@@ -28,6 +28,17 @@ The native multi-page layouy functionality can trigger various issues when combi
     //= require jquery_mobile_multipage_support
     //= require jquery_mobile
 
+### Usage
+
+This gem also exposes jQuery Mobile exception handling through declarative HTML elements. To specify a message override, include the separate exception handling file (before the JQM script!).
+
+    //= require jquery_mobile_multipage_support
+    //= require jquery_mobile
+
+Then add an element with the id `jquery-exceptions` to your page:
+
+    <div id="jquery-exceptions" class="hidden">Ouch, an error!</div>
+
 ### License
 
 The jQuery Mobile Rails Gem is published under the New BSD license.
