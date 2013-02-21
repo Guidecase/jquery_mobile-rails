@@ -21,18 +21,11 @@ You can include it by adding the following to your javascript and stylesheet fil
 
     //= require jquery_mobile
 
-### Multi-Page Template Support
-
-The native multi-page layouy functionality can trigger various issues when combined with normal single-page PJAX templates. Include the separate support file containing necessary fixes (before the JQM script!) in order to run a site with both multi- and single-page layouts. e.g.
-
-    //= require jquery_mobile_multipage_support
-    //= require jquery_mobile
-
 ### Usage
 
 This gem also exposes jQuery Mobile exception handling through declarative HTML elements. To specify a message override, include the separate exception handling file (before the JQM script!).
 
-    //= require jquery_mobile_multipage_support
+    //= require jquery_mobile_exceptions
     //= require jquery_mobile
 
 Then add an element with the id `jquery-exceptions` to your page:
