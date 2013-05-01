@@ -15,7 +15,7 @@ This gem is intended to support the latest stable and candidate releases. The cu
 
 In your Gemfile, add this line:
 
-    gem "jquery_mobile-rails"
+    gem "jquery_mobile-rails", :git => 'https://github.com/Guidecase/jquery_mobile-rails.git'
 
 You can include it by adding the following to your javascript and stylesheet files:
 
